@@ -1,99 +1,7 @@
+{% extends 'Shop/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<head>
-    <title>Protein Zone : Food Supplement Shop, Dhule.</title>
-    <!-- custom-theme -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Gym Trainer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script type="application/x-javascript">
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-    <!-- //custom-theme -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
-    <!-- Owl-carousel-CSS -->
-
-    <!-- Testimonials-slider-css-files -->
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
-    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
-    <!-- //Testimonials-slider-css-files -->
-
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
-    <!-- font-awesome-icons -->
-    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-    <!-- //font-awesome-icons -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
-    <link
-        href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800"
-        rel="stylesheet">
-</head>
-</head>
-<body>
-    <!-- banner -->
-    <div class="main_section_agile" id="home">
-        <div class="agileits_w3layouts_banner_nav">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header navbar-left">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-    
-                        </button>
-    
-    
-                        <h1><a class="navbar-brand" href="index.html"><img src="{% static 'images/home/proteinzone.png' %}" alt="logo"
-                                    style="width:10%;"> </a></h1>
-    
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                        <nav class="link-effect-2" id="link-effect-2">
-                            <ul class="nav navbar-nav">
-    
-                                <li class="active"><a href="index.html" class="effect-3">Home</a></li>
-                                <li><a href="about.html" class="effect-3">About</a></li>
-                                <!-- <li><a href="Our Products.html" class="effect-3">Our Products</a></li> -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Our Products <b
-                                            class="caret"></b></a> -->
-                                    <ul class="dropdown-menu agile_short_dropdown">
-                                        <li><a href="Proteins & Creatines.html">Proteins & Creatines</a></li>
-                                        <li><a href="BCAA & Energy Drinks.html">BCAA & Energy Drinks</a></li>
-                                        <li><a href="Peanut Butter & Fish oil capsule.html">Peanut Butter & Fish oil
-                                                capsule</a></li>
-                                    </ul>
-                                </li>
-                                <!--li class="dropdown">
-    								<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
-    								<ul class="dropdown-menu agile_short_dropdown">
-    									<li><a href="icons.html">Web Icons</a></li>
-    									<li><a href="typography.html">Typography</a></li>
-    								</ul>
-    							</li-->
-                                <li><a href="mail.html" class="effect-3">Mail Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-    
-                </nav>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
+{% block content %}
     
     <div class="banner_top">
         <div class="slider">
@@ -128,10 +36,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
                 <!-- Slideshow 3 Pager -->
                 <ul id="slider3-pager">
-                    <li><a href="#"><img src="images/banner11.jpg" data-selector="img" alt=""></a></li>
-                    <li><a href="#"><img src="images/banner22.jpg" data-selector="img" alt=""></a></li>
-                    <li><a href="#"><img src="images/banner33.jpg" data-selector="img" alt=""></a></li>
-                    <li><a href="#"><img src="images/banner44.jpg" data-selector="img" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/home/banner11.jpg' %}" data-selector="img" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/home/banner22.jpg' %}" data-selector="img" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/home/banner33.jpg' %}" data-selector="img" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/home/banner44.jpg' %}" data-selector="img" alt=""></a></li>
     
                 </ul>
             </div>
@@ -155,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul class="about-list">
                         <li>
                             <div class="col-md-3 we-w3l">
-                                <img src="images/ON-WHEY GOLD copy.png" alt="" class="img-responsive" />
+                                <img src="{% static 'images/home/protein.png' %}" alt="" class="img-responsive" />
                             </div>
                             <div class="col-md-6 in-block">
                                 <h5>PROTEINS</h5>
@@ -167,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                         <li>
                             <div class="col-md-3 we-w3l">
-                                <img src="images/ON-WHEY CREATINE (2).png" alt="" class="img-responsive" />
+                                <img src="{% static 'images/home/creatine.png' %}" alt="" class="img-responsive" />
                             </div>
                             <div class="col-md-6 in-block">
                                 <h5>CREATINES</h5>
@@ -179,7 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
                         <li>
                             <div class="col-md-3 we-w3l">
-                                <img src="images/Energy drink copy.png" alt="" class="img-responsive" />
+                                <img src="{% static 'images/home/energy.png' %}" alt="" class="img-responsive" />
                             </div>
                             <div class="col-md-6 in-block">
                                 <h5>ENERGY DRINK</h5>
@@ -190,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="clearfix"> </div>
                         </li>
                         <div class="col-md-3 we-w3l">
-                            <img src="images/My fitness- crunchy copy.png" alt="" class="img-responsive" />
+                            <img src="{% static 'images/home/peanut.png' %}" alt="" class="img-responsive" />
                         </div>
                         <div class="col-md-6 in-block">
                             <h5>PEANUT BUTTER</h5>
@@ -203,7 +111,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </ul>
                 </div>
                 <div class="about2">
-    
                 </div>
             </div>
     
@@ -254,7 +161,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="item">
                         <div class="testimonal grid-1">
                             <div class="first-grid">
-                                <img src="images/sunit.png" style="width:35%;">
+                                <img src="{% static 'images/brandAmbassadors/sunit.png' %}" style="width:35%;">
                                 <!-- <img src="images/1.png" alt="" /> -->
                                 <h3>Sunit Jadhav</h3>
                                 <p> I will recoomend you to have the "My Fitness" peanut butter for Energy Booster & Better
@@ -266,7 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="item">
                         <div class="testimonal grid-1">
                             <div class="first-grid">
-                                <img src="images/suhas.png" style="width:35%;" />
+                                <img src="{% static 'images/brandAmbassadors/suhas.png' %}" style="width:35%;" />
                                 <h3>Suhas Khamkar</h3>
                                 <p> I will recoomend you to have the "My Fitness" peanut butter for Energy Booster & Better
                                     blood circulation to help you. Recommending this to you because it is genuiene products.
@@ -279,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="item">
                         <div class="testimonal grid-1">
                             <div class="first-grid">
-                                <img src="images/alex.png" style="width:35%;" />
+                                <img src="{% static 'images/brandAmbassadors/alex.png' %}" style="width:35%;" />
                                 <h3>Alex Babatunde</h3>
                                 <p> I will recoomend you to have the "My Fitness" peanut butter for Energy Booster & Better
                                     blood circulation to help you. Recommending this to you because it is genuiene products.
@@ -395,140 +302,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     </div>
     <!-- our blog -->
-    
-    <!-- footer -->
-    <div class="footer">
-        <div class="f-bg-w3l">
-            <div class="col-md-3 w3layouts_footer_grid">
-                <h2>About <span> Us</span></h2>
-                <p>Experienced Suppliment Shop in Dhule. Best Suppliments are provided by us according to the Client's
-                    fitness and Health.</p>
-                <!-- <form action="#" method="post">
-    						<input type="email" name="Email" placeholder="Enter your email..." required="">
-    						<button class="btn1"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
-    						<div class="clearfix"> </div>
-    					</form> -->
-    
-    
-            </div>
-            <div class="col-md-3 w3layouts_footer_grid">
-                <h3>Connect With<span> Us</span></h3>
-                <!-- <ul class="con_inner_text midimg">
-    						<li><a href="#"><img src="images/banner22.jpg" alt="" class="img-responsive" /></a></li>
-    					    <li><a href="#"><img src="images/banner33.jpg" alt="" class="img-responsive" /></a></li>
-    						<li><a href="#"><img src="images/banner44.jpg" alt="" class="img-responsive" /></a></li>
-    						<li><a href="#"><img src="images/banner11.jpg" alt="" class="img-responsive" /></a></li>
-    						<li><a href="#"><img src="images/banner22.jpg" alt="" class="img-responsive" /></a></li>
-    					    <li><a href="#"><img src="images/banner33.jpg" alt="" class="img-responsive" /></a></li>
-    						 <li><a href="#"><img src="images/banner11.jpg" alt="" class="img-responsive" /></a></li>
-    						<li><a href="#"><img src="images/banner44.jpg" alt="" class="img-responsive" /></a></li>
-    				     </ul> -->
-                <ul class="social_agileinfo">
-                    <li><a href="https://www.facebook.com/profile.php?id=100023372978498&epa=SEARCH_BOX"
-                            class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" class="w3_whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 w3layouts_footer_grid">
-                <h3>Our Premium <span> Brands</span> </h3>
-                <ul class="links">
-                    <li><a href="https://www.optimumnutrition.com/en-us">ON-Optimum Nutrition </a></li>
-                    <li><a href="https://www.muscletech.com/intl/products/">MT-Muscletech</a></li>
-                    <li><a href="https://www.labrada.com/store/musclemassgainer.html">Labrada-Mass Gainer</a></li>
-                    <li><a href="https://ultimatenutrition.com/products/prostar-100-whey-protein?variant=28966683050044">Ultimate
-                            NUtrition-Whey</a></li>
-                    <li><a href="https://www.bsn-supplements.com/en-gb/products/syntha-6/">BSN-SYNTHA 6</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 w3layouts_footer_grid">
-                <h2>Contact <span>Us</span></h2>
-                <ul class="con_inner_text">
-                    <li><span class="fa fa-map-marker" aria-hidden="true"></span>Protein Zone (Food suppliment Shop), In
-                        front of Jaihind Senior College, Wadibokhar road,Dhule City</li>
-                    <li><span class="fa fa-envelope-o" aria-hidden="true"></span> <a
-                            href="mailto:proteinzonedhule@gmail.com">proteinzonedhule@gmail.com</a></li>
-                    <li><span class="fa fa-phone" aria-hidden="true"></span> 992-383-9990</li>
-                    <li><span class="fa fa-phone" aria-hidden="true"></span> 702-037-9037</li>
-                </ul>
-                <!-- <ul class="social_agileinfo">
-    						<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-    						<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-    						<li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-    						<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
-    					</ul> -->
-            </div>
-    
-    
-            <div class="clearfix"> </div>
-    
-        </div>
-        <p class="copyright">© 2020 Protein Zone : Food Suppliment Shop | Designed by <a href="#" target="_blank">Ruchiket
-                Chakor.</a></p>
-    </div>
-    <!-- //footer -->
-    <!-- bootstrap-pop-up -->
-    <div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    Protein Zone
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                </div>
-                <section>
-                    <div class="modal-body">
-                        <img src="images/3.jpg" alt=" " class="img-responsive" />
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using 'Content here, content here', making it look like
-                            readable English.</p>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <!-- //bootstrap-pop-up -->
-    <!-- js -->
-    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
-    <!-- //js -->
-    <!-- Slider script -->
-    <script src="{% static 'js/responsiveslides.min.js' %}"></script>
-    <script>
-        // You can also use "$(window).load(function() {"
-        $(function () {
-            $("#slider").responsiveSlides({
-                auto: true,
-                nav: true,
-                manualControls: '#slider3-pager',
-            });
-        });
-    </script>
-    <script type="text/javascript" src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
-    
-    <!-- for testimonials slider-js-file-->
-    <script src="{% static 'js/owl.carousel.js' %}"></script>
-    <!-- //for testimonials slider-js-file-->
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                autoPlay: true,
-                items: 3,
-                itemsDesktop: [640, 5],
-                itemsDesktopSmall: [414, 4]
-            });
-        }); 
-    </script>
-    <!-- for testimonials slider-js-script-->
-    <!-- stats -->
-    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countup.js' %}"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-</body>
-</html>
+{% endblock %}
