@@ -8,22 +8,28 @@ def home(request):
     return render(request,'Shop/index.html',{})
 
 def protein(request):
-    return render(request,'Shop/protein.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'protein').order_by('-createdOn')
+    return render(request,'Shop/Products/protein.html',{'products':products})
 
 def creatine(request):
-    return render(request,'Shop/creatine.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'creatine').order_by('-createdOn')
+    return render(request,'Shop/Products/creatine.html',{'products':products})
 
 def peanutButter(request):
-    return render(request,'Shop/peanutButter.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'peanut').order_by('-createdOn')
+    return render(request,'Shop/Products/peanutButter.html',{'products':products})
 
 def energyDrink(request):
-    return render(request,'Shop/energyDrink.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'drink').order_by('-createdOn')
+    return render(request,'Shop/Products/energyDrink.html',{'products':products})
 
 def bcaa(request):
-    return render(request,'Shop/bcaa.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'bcaa').order_by('-createdOn')
+    return render(request,'Shop/Products/bcaa.html',{'products':products})
 
 def glutamine(request):
-    return render(request,'Shop/glutamine.html',{})
+    products = Supplement.objects.filter(supplementType__icontains = 'glutamine').order_by('-createdOn')
+    return render(request,'Shop/Products/glutamine.html',{'products':products})
 
 def about(request):
     return render(request,'Shop/about.html',{})
