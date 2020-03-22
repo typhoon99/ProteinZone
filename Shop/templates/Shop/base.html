@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 {% endif %}
 
                                 {% if request.path == '/mailUs/' %} 
-                                    <li class="active"></li><a href="{% url 'mailUs' %}"" class=" effect-3">Mail Us</a></li>
+                                    <li class="active"><a href="{% url 'mailUs' %}"" class=" effect-3">Mail Us</a></li>
                                 {% else %}
                                     <li><a href="{% url 'mailUs' %}" class=" effect-3">Mail Us</a></li>
                                 {% endif %}
