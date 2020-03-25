@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: serif;
+    font-family: -webkit-body;
 }
 
 p {
@@ -1381,14 +1381,14 @@ img.zoom-img:hover {
     text-align: center;
 }
 .about-bott-right h5 {
-    color: #f8b239;
-    font-size: 24px;
+    color:#19328d;
+    font-size: 38px;
     margin-bottom: 0.7em;
     font-weight: bold;
     letter-spacing: 2px;
 }
 .about-bott-right p {
-    font-size: 17px;
+    font-size: 22px;
     color: #777;
     line-height: 30px;
     letter-spacing: 1px;
@@ -2448,13 +2448,13 @@ h2.typoh2 {
     font-family: sans-serif;
 }
 h3.heading-agileinfo.white-w3ls {
-    color: #f8b239;
+    color:#1f242c;
     font-size: 35px;
     line-height: 48px;
 }
 .more-button a {
     font-size: 15px;
-    background: #f8b239;
+    background: #1916fa;
     color: #fff;
     padding: 8px 25px;
     display: inline-block;

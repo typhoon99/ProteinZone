@@ -19,17 +19,13 @@ def peanutButter(request):
     products = Supplement.objects.filter(supplementType__icontains = 'peanut').order_by('-createdOn')
     return render(request,'Shop/Products/peanutButter.html',{'products':products})
 
-def energyDrink(request):
-    products = Supplement.objects.filter(supplementType__icontains = 'drink').order_by('-createdOn')
-    return render(request,'Shop/Products/energyDrink.html',{'products':products})
+def preWorkout(request):
+    products = Supplement.objects.filter(supplementType__icontains = 'pre workout').order_by('-createdOn')
+    return render(request,'Shop/Products/preWorkout.html',{'products':products})
 
 def bcaa(request):
     products = Supplement.objects.filter(supplementType__icontains = 'bcaa').order_by('-createdOn')
     return render(request,'Shop/Products/bcaa.html',{'products':products})
-
-def glutamine(request):
-    products = Supplement.objects.filter(supplementType__icontains = 'glutamine').order_by('-createdOn')
-    return render(request,'Shop/Products/glutamine.html',{'products':products})
 
 def about(request):
     return render(request,'Shop/about.html',{})
