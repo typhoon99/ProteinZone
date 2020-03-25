@@ -34,14 +34,14 @@ def mailUs(request):
     if request.method == "POST":
         message = Message()
         message.name = request.POST.get('name')
-        message.phone_number = request.POST.get('name')
+        message.phone_number = request.POST.get('phone')
         message.email = request.POST.get('email')
         message.message = request.POST.get('message')
         message.save()
 
         subject = 'ProteinZone - ' + 'New Message from ' + str(message.name)
         message = 'Email: ' + str(message.email) + '\n' +'Phone: ' + str(message.phone_number) + '\n\n' + str(message.message)
-        recepient = 'son.goku.db7@gmail.com'
+        recepient = 'proteinzonedhule@gmail.com'
         send_mail(subject, message, EMAIL_HOST_USER,[recepient], fail_silently = False)
         return render(request,'Shop/mailUs.html', {'message' : message})
     else:
