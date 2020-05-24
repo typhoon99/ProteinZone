@@ -25,7 +25,7 @@ SECRET_KEY = ')fv!w_8snxgdg*5$vjo=$5#6o@4i23%nt(3b7wyj2!*!h)&g&t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com',]
+ALLOWED_HOSTS = ['127.0.0.1','http://proteinzone.herokuapp.com/','proteinzone.herokuapp.com/']
 
 
 # Application definition
